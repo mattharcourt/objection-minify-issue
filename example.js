@@ -3,7 +3,6 @@ import Knex from 'knex'
 
 import { default as dialect } from 'knex/lib/dialects/sqlite3/index.js'
 import sqlite3 from 'sqlite3'
-dialect.prototype._driver = () => sqlite3
 
 class Primary extends Model {
   static get tableName() {
@@ -33,6 +32,8 @@ class Related extends Model {
 let knex
 const connect = (filename) => {
   filename = filename || 'example.sqlite'
+
+  dialect.prototype._driver = () => sqlite3
 
   knex = Knex({
     client: dialect,

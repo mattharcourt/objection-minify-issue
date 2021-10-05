@@ -1,0 +1,20 @@
+{
+  "name": "minifed-objection-issue",
+  "version": "1.0.0",
+  "main": "example.js",
+  "type": "module",
+  "license": "MIT",
+  "scripts": {
+    "unminified": "node ./build.js && node out.js",
+    "minified": "node ./build.js --minify && node out.minify.js",
+    "partial": "node ./build.js --minify-whitespace --minify-syntax && node out.partial-minify.js"
+  },
+  "dependencies": {
+    "knex": "^0.95.11",
+    "objection": "^2.2.17",
+    "sqlite3": "^5.0.2"
+  },
+  "devDependencies": {
+    "esbuild": "^0.13.3"
+  }
+}

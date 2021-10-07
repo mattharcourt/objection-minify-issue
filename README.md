@@ -37,7 +37,7 @@ https://github.com/mattharcourt/objection-minify-issue/blob/bb9c979e981f4c3c0520
 1. Clone [this repo](https://github.com/mattharcourt/objection-minify-issue)
 2. Install dependencies (e.g. `yarn install` or `npm install`)
 3. Run the package scripts
-    * `yarn minified` or `npm run minified` to bundle and run the minified
+    * `yarn test` or `npm run test` to bundle and run the minified
     example code and exhibit the error.
     * `yarn unminified` or `npm run unminified` to bundle and run the example
     code without minification and without error.

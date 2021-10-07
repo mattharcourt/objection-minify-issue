@@ -5,9 +5,10 @@
   "type": "module",
   "license": "MIT",
   "scripts": {
-    "unminified": "node ./build.js && node out.js",
-    "minified": "node ./build.js --minify && node out.minify.js",
-    "partial": "node ./build.js --minify-whitespace --minify-syntax && node out.partial-minify.js"
+    "test": "npm run minified",
+    "unminified": "node ./build.js && node test.unminified.js",
+    "minified": "node ./build.js --minify && node test.js",
+    "partial": "node ./build.js --minify-whitespace --minify-syntax && node test.partial-minify.js"
   },
   "dependencies": {
     "knex": "^0.95.11",

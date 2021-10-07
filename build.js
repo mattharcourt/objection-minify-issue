@@ -6,10 +6,10 @@ let minifySyntax = !minify && process.argv.includes('--minify-syntax')
 let minifyWhitespace = !minify && process.argv.includes('--minify-whitespace')
 
 let outfile = minify
-  ? 'out.minify.js'
+  ? 'test.js'
   : minifyWhitespace || minifyWhitespace || minifyIdentifiers
-  ? 'out.partial-minify.js'
-  : 'out.js'
+  ? 'test.partial-minify.js'
+  : 'test.unminified.js'
 
 build({
   bundle: true,

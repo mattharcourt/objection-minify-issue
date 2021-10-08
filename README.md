@@ -48,7 +48,7 @@ https://github.com/mattharcourt/objection-minify-issue/blob/bb9c979e981f4c3c0520
 </details>
 
 
-# Explanation #
+# What's Happening #
 
 <details>
 <summary>Explanation of the issue</summary>
@@ -65,7 +65,7 @@ have been minified.
 </details>
 
 
-# Solutions #
+# How To Fix It #
 
 <details>
 <summary>Potential solutions/work-arounds</summary>

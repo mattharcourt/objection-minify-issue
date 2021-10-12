@@ -45,6 +45,10 @@ https://github.com/mattharcourt/objection-minify-issue/blob/bb9c979e981f4c3c0520
     with whitespace and syntax minification, but without identifier
     minification (no error).
 
+Each of the package scripts bundles `example.js` using the `build.js` file
+to call `esbuild` (with varying states of minification), and then runs the
+resulting bundle to demonstrate the effect of the minification.
+
 </details>
 
 

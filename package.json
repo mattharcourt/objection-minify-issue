@@ -16,6 +16,6 @@
     "sqlite3": "^5.0.2"
   },
   "devDependencies": {
-    "esbuild": "^0.13.3"
+    "esbuild": "^0.13.4"
   }
 }
